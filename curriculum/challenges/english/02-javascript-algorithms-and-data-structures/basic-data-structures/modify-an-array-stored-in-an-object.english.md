@@ -75,6 +75,34 @@ console.log(addFriend(user, 'Pete'));
 <section id='solution'>
 
 ```js
-// solution required
+let user = {
+  name: 'Kenneth',
+  age: 28,
+  data: {
+    username: 'kennethCodesAllDay',
+    joinDate: 'March 26, 2016',
+    organization: 'freeCodeCamp',
+    friends: [
+      'Sam',
+      'Kira',
+      'Tomo'
+    ],
+    location: {
+      city: 'San Francisco',
+      state: 'CA',
+      country: 'USA'
+    }
+  }
+};
+
+function addFriend(user, friend) {
+  // change code below this line 
+  var ar = user.data.friends;
+  ar.push(friend);
+	return ar;
+  // change code above this line
+}
+
+console.log(addFriend(user, 'Pete'));
 ```
 </section>
